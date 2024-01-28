@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vile Insult Generator</title>
+    <link href="master.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+    <a href="/" class="logo">Vile insult Generator</a>
+    
+    <nav class="navbar" >
+    <ul>
+        <a href="/about">About</a>
+    </ul>
+    </nav>
+</header>
+
+<div class="container">
+
+    <p id="desc">  Generate creative insults to absolutely violate/destroy someone's remaining sense of self worth (if they have any that is) in an arguement and eventually assert your dominance.</p>
+    <p id="desc">Caution: NSFW!</p>
+    <% if (insult) { %>
+        <p id="insult"><%= insult %></p>
+    <% } %>
+
+</div>
+<div class="butt">
+    <form action="/generate" method="get">
+        <button type="submit">Generate</button>
+    </form>
+
+</div>
+<footer class="footer">
+    <p>&copy; 2024, Made by AT</p>
+</footer>
+</body>
+</html>
+
+
+
